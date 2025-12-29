@@ -25,4 +25,4 @@ function addStudent(event) {
 function deleteRow(btn) {
     let row = btn.parentNode.parentNode;
     row.remove();
-}
+} 
