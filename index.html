@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link href="Form Js.css" rel="Stylesheet">
+   
+</head>
+<body>
+<center>
+    <h1>Student Form</h1>
+</center>
+
+<!-- FORM -->
+<form id="Form" onsubmit="addStudent(event)">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="Name" required></td>
+        </tr>
+
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" id="Age" required></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" required> Male
+                <input type="radio" name="Gender" value="Female"> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Course:</td>
+            <td>
+                <select id="Course">
+                    <option>Java</option>
+                    <option>Java Script</option>
+                    <option>Python</option>
+                    <option>Ms Excel</option>
+                    <option>Front-end development</option>
+                    <option>Data Science</option>
+                    <option>Node js</option>
+                    <option>React js</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="Email" required></td>
+        </tr>
+    </table>
+
+    <button id="b">Save</button>
+</form>
+
+<!-- TABLE -->
+<center>
+<table id="tabledata">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>Reena</td>
+        <td>25</td>
+        <td>Python</td>
+        <td>abcdmnbv2389@gmail.com</td>
+        <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>Meena</td>
+        <td>22</td>
+        <td>Java</td>
+        <td>Meena89@gmail.com</td>
+        <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+</table>
+</center>
+
+<!-- JAVASCRIPT -->
+<script src="Form JS.js">
+
+</script>
+
+</body>
+</html>
